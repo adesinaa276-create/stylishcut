@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Booking — Stylish Cut</title>
+<meta name="description" content="Book an appointment at Stylish Cut, 14 Fashina Street, Osogbo. Walk-ins welcome, Mon–Sat 8am–8pm.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0c0b'/%3E%3Crect x='6' y='4' width='4' height='24' fill='%23f4ede1' transform='rotate(20 8 16)'/%3E%3Crect x='14' y='4' width='4' height='24' fill='%237f3535' transform='rotate(20 16 16)'/%3E%3Crect x='22' y='4' width='4' height='24' fill='%23c2894a' transform='rotate(20 24 16)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+ <div class="brand">
+ <a href="index.html" class="wordmark">Stylish<span>Cut</span></a>
+ <span class="stripe" aria-hidden="true"></span>
+ </div>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+ <span class="nav-toggle-bars"><span></span><span></span><span></span></span>
+ </button>
+ <nav>
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="services.html">Services</a></li>
+ <li><a href="gallery.html">Gallery</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ </ul>
+ </nav>
+</header>
+
+<main id="main">
+
+ <div class="page-header">
+ <span class="stripe" aria-hidden="true"></span>
+ <h1>Contact & booking</h1>
+ <p>Walk-ins welcome, but booking ahead means less wait time.</p>
+ </div>
+
+ <div class="contact-layout">
+
+ <dl class="contact-info">
+ <dt>Address</dt>
+ <dd>14 Fashina Street, Osogbo, Osun State</dd>
+
+ <dt>Phone</dt>
+ <dd><a href="tel:08035550198">0803 555 0198</a></dd>
+
+ <dt>WhatsApp</dt>
+ <dd><a href="https://wa.me/2348035550198">Chat with us</a></dd>
+
+ <dt>Hours</dt>
+ <dd>Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: Closed</dd>
+ </dl>
+
+ <form onsubmit="return handleBookingSubmit(event)" novalidate>
+ <div>
+ <label for="name">Name</label>
+ <input type="text" id="name" name="name" required>
+ <span class="field-error" data-error-for="name"></span>
+ </div>
+
+ <div>
+ <label for="phone">Phone number</label>
+ <input type="tel" id="phone" name="phone" required>
+ <span class="hint">We'll only use this to confirm your booking.</span>
+ <span class="field-error" data-error-for="phone"></span>
+ </div>
+
+ <div>
+ <label for="service">Service</label>
+ <select id="service" name="service" required>
+ <option value="">Choose a service</option>
+ <option value="skin-fade">Skin fade</option>
+ <option value="regular-cut">Regular haircut</option>
+ <option value="kids-haircut">Kids haircut</option>
+ <option value="beard-trim">Beard trim & line up</option>
+ <option value="hot-towel-shave">Hot towel shave</option>
+ </select>
+ <span class="field-error" data-error-for="service"></span>
+ </div>
+
+ <div>
+ <label for="preferred-time">Preferred day/time</label>
+ <input type="text" id="preferred-time" name="preferred-time" placeholder="e.g. Saturday afternoon">
+ </div>
+
+ <button type="submit">Request booking</button>
+ <p class="form-status" id="form-status" role="status"></p>
+ </form>
+
+ </div>
+
+ <div class="map-wrap">
+ <iframe
+ src="https://www.google.com/maps?q=14+Fashina+Street,+Osogbo,+Osun+State,+Nigeria&output=embed"
+ title="Map to Stylish Cut, 14 Fashina Street, Osogbo"
+ loading="lazy"
+ referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
+
+ <section class="faq">
+ <div class="section-heading">
+ <div>
+ <span class="stripe" aria-hidden="true"></span>
+ <h2>Common questions</h2>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <button class="faq-question" aria-expanded="false">
+ Do I need to book ahead?
+ <span class="faq-icon" aria-hidden="true"></span>
+ </button>
+ <div class="faq-answer">
+ <p>No — walk-ins are always welcome. Booking ahead just means less time waiting once you arrive.</p>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <button class="faq-question" aria-expanded="false">
+ How do I book a slot?
+ <span class="faq-icon" aria-hidden="true"></span>
+ </button>
+ <div class="faq-answer">
+ <p>Fill in the form above with your preferred day and time, or message us directly on WhatsApp — whichever's easier for you.</p>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <button class="faq-question" aria-expanded="false">
+ What are your opening hours?
+ <span class="faq-icon" aria-hidden="true"></span>
+ </button>
+ <div class="faq-answer">
+ <p>Monday to Saturday, 8:00 AM to 8:00 PM. We're closed on Sundays.</p>
+ </div>
+ </div>
+
+ <div class="faq-item">
+ <button class="faq-question" aria-expanded="false">
+ Where are you located?
+ <span class="faq-icon" aria-hidden="true"></span>
+ </button>
+ <div class="faq-answer">
+ <p>14 Fashina Street, Osogbo, Osun State — see the map above for directions.</p>
+ </div>
+ </div>
+ </section>
+
+</main>
+
+<footer>
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <a href="index.html" class="wordmark">Stylish<span>Cut</span></a>
+ <p>Neighborhood barbershop on Fashina Street, Osogbo — five years of sharp fades, clean shaves, and no-rushed service.</p>
+ <!-- TODO: swap in the real social links when ready -->
+ <div class="footer-social" aria-label="Social media">
+         <a href="https://www.linkedin.com/in/ayomide-adesina-8258b2412"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+    <a href="mailto:adesinaa276@gmail.com"
+           aria-label="Email">
+
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+ </div>
+ </div>
+ <div class="footer-col">
+ <h4>Explore</h4>
+ <ul>
+ <li><a href="services.html">Services & pricing</a></li>
+ <li><a href="gallery.html">Gallery</a></li>
+ <li><a href="contact.html">Book an appointment</a></li>
+ </ul>
+ </div>
+ <div class="footer-col">
+ <h4>Visit</h4>
+ <ul>
+ <li><span>14 Fashina Street, Osogbo, Osun State</span></li>
+ <li><a href="tel:08035550198">0803 555 0198</a></li>
+ <li><span>Mon–Sat: 8:00 AM–8:00 PM</span></li>
+ <li><span>Sunday: Closed</span></li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <span>&copy; 2026 Stylish Cut</span>
+ <span>Designed & developed by Ayomide Adesina</span>
+ </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
